@@ -19,8 +19,8 @@ def key_performance_indicators(confusion_matrix):
     
     # TP, FP, FN - Precision, Recall, Specificity, F1 calculations
     tp = cm[0][0]
-    fp = cm[1][0]
-    fn = cm[0][1]
+    fp = cm[0][1]
+    fn = cm[1][0]
     tn = cm[1][1]
     precision = tp / (tp + fp)
     recall = tp / (tp + fn)
